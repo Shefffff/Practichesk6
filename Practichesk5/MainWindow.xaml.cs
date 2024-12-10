@@ -106,7 +106,16 @@ namespace Practichesk5
             pair3.SetParams(x, z);
             pair1.plus(pair2, pair3, out int res_part1, out int res_part2);
             Sum3_pairs.Text = (res_part1, res_part2).ToString();
+
+        }
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
 
+        private void about_programm_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Выполнил Баукин Алексей Алексеевич , в 1:06 , \n Задание: Доработать класс разработанный в практической работе №5 по заданию. Оформить\r\nмодули комментариями.\n Использовать класс Pair (пара чисел). Разработать операцию сложения пар (а, b) +\r\n(с, d) = (а + c, b + d). Разработать операцию для уменьшения полей на 1.");
+        }
     }
  }
